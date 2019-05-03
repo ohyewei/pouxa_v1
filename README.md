@@ -1,2 +1,8 @@
-# pouxa_v1
-Independent study (bachelor)
+# 搜衣好幫手 Ρούχα
+
+## 大學畢業專題
+## Independent study (bachelor)
+
+- 整合網路拍賣商品、天氣預報及部落客穿搭文章，讓使用者使用一個 APP 便
+能同時比較商品和得到當天的建議搭配。 
+- 利用網路爬蟲、斷詞及情感分析結合 Android APP 開發完成。 
