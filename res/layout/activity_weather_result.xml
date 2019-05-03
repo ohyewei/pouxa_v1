@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_weather_result"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pouxateam.pouxa.WeatherResult">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txcity"
+        android:layout_marginTop="70dp"
+        android:textSize="44sp"
+        android:text="城市"
+        android:paddingLeft="30dp"
+        android:textColor="#000000"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txarea"
+        android:textSize="44sp"
+        android:text="鄉鎮"
+        android:layout_alignTop="@+id/txcity"
+        android:layout_alignParentEnd="true"
+        android:paddingRight="30dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="白天溫度："
+        android:id="@+id/txmorningtep"
+        android:textSize="34sp"
+        android:layout_marginTop="35dp"
+        android:layout_below="@+id/txcity"
+        android:layout_alignStart="@+id/txcity"
+        android:paddingLeft="20dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="晚上溫度："
+        android:id="@+id/txnighttep"
+        android:textSize="34sp"
+        android:layout_marginTop="29dp"
+        android:layout_below="@+id/txmorning"
+        android:layout_alignStart="@+id/txmorningtep"
+        android:paddingLeft="20dp"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未選擇地區"
+        android:id="@+id/txmorning"
+        android:textSize="26sp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/txmorningtep"
+        android:paddingRight="20dp"
+        android:layout_alignParentEnd="true"
+        android:textColor="#000000" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="未選擇地區"
+        android:id="@+id/txnight"
+        android:textSize="26sp"
+        android:paddingTop="10dp"
+        android:layout_below="@+id/txnighttep"
+        android:paddingRight="20dp"
+        android:layout_alignParentEnd="true"
+        android:textColor="#000000" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/tableRow">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="32sp"
+            android:id="@+id/txrecommand"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:visibility="invisible"
+            android:textStyle="bold"/>
+
+        <ImageButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/imgrecommand"
+            android:src="@drawable/recommand_button"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="10dp"
+            android:background="#00000000"
+            android:visibility="visible" />
+    </FrameLayout>
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_icon"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:id="@+id/tableRow">
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/icsearch"
+            android:layout_column="0"
+            android:background="#00000000"
+            android:src="@drawable/icon_search" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/icimage"
+            android:layout_column="1"
+            android:background="#00000000"
+            android:src="@drawable/icon_image"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ichome"
+            android:layout_column="2"
+            android:background="#00000000"
+            android:src="@drawable/icon_home" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iclike"
+            android:layout_column="3"
+            android:background="#00000000"
+            android:src="@drawable/icon_like" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/icsetting"
+            android:layout_column="4"
+            android:background="#00000000"
+            android:src="@drawable/icon_setting" />
+    </TableRow>
+
+
+</RelativeLayout>

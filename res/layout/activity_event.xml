@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_event"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pouxateam.pouxa.Event">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tvtitle"
+        android:textSize="40sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="18dp"
+        android:background="@drawable/bg_storename"
+        android:gravity="center" />
+
+    <ListView
+        android:id="@+id/list"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:choiceMode="singleChoice"
+        android:textFilterEnabled="false"
+        android:layout_above="@+id/tableRow"
+        android:layout_below="@+id/tvtitle"
+        android:paddingLeft="13dp"
+        android:paddingTop="20dp"
+        android:paddingRight="13dp"
+        android:paddingBottom="30dp" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_icon"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:id="@+id/tableRow">
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/icsearch"
+            android:layout_column="0"
+            android:background="#00000000"
+            android:src="@drawable/icon_search" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/icimage"
+            android:layout_column="1"
+            android:background="#00000000"
+            android:src="@drawable/icon_image"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ichome"
+            android:layout_column="2"
+            android:background="#00000000"
+            android:src="@drawable/icon_home" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iclike"
+            android:layout_column="3"
+            android:background="#00000000"
+            android:src="@drawable/icon_like" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/icsetting"
+            android:layout_column="4"
+            android:background="#00000000"
+            android:src="@drawable/icon_setting" />
+    </TableRow>
+
+
+</RelativeLayout>

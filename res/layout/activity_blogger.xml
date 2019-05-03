@@ -1,0 +1,458 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_blogger"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_all"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="pouxateam.pouxa.Blogger">
+
+    <TextView
+        android:id="@+id/tvtitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="16dp"
+        android:textColor="#000000"
+        android:textSize="40sp" />
+
+    <ScrollView
+        android:id="@+id/scrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/tvtitle"
+        android:fillViewport="false"
+        android:paddingBottom="10dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="10dp"
+        android:layout_above="@+id/copyright">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/zoey"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/bg_blogger"
+                    android:drawableStart="@drawable/blog_zoey"
+                    android:text="機器娃娃丁小雨"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/zoeylike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:paddingEnd="20dp"
+                    android:text=" 10K"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/hannn"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/bg_blogger"
+                    android:drawableStart="@drawable/blog_hannn"
+                    android:text="Amigo"
+                    android:textSize="25sp" />
+
+                <TextView
+                    android:id="@+id/hannnlike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:paddingEnd="20dp"
+                    android:text=" 2.7K"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/michellebuy"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/bg_blogger"
+                    android:drawableLeft="@drawable/blog_michellebuy"
+                    android:text="米雪兒"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/michellebuylike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:paddingEnd="20dp"
+                    android:text=" 58k"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/loislinlin"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/bg_blogger"
+                    android:drawableLeft="@drawable/blog_loislinlin"
+                    android:text="露易絲"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/loislinlinlike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:paddingEnd="20dp"
+                    android:text=" 140K"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/eyes"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/bg_blogger"
+                    android:drawableLeft="@drawable/blog_eyes"
+                    android:text="77涵"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/eyeslike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:paddingEnd="20dp"
+                    android:text=" 160K"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/millyq"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/bg_blogger"
+                    android:drawableLeft="@drawable/blog_millyq"
+                    android:text="米粒Q"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/millyqlike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:paddingEnd="20dp"
+                    android:text=" 91K"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/youwin"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/bg_blogger"
+                    android:drawableLeft="@drawable/blog_youwin"
+                    android:text="金老佛爺"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/youwinlike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:paddingEnd="20dp"
+                    android:text=" 260K"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/mavismay"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/bg_blogger"
+                    android:drawableLeft="@drawable/blog_mavismay"
+                    android:text="哈哈梅微絲"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/mavismaylike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:paddingEnd="20dp"
+                    android:text=" 10K"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/cuterosalind"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/bg_blogger"
+                    android:drawableLeft="@drawable/blog_cuterosalind"
+                    android:text="蘋果"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/cuterosalindlike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:paddingEnd="20dp"
+                    android:text=" 57K"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/ananchen"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/bg_blogger"
+                    android:drawableLeft="@drawable/blog_ananchen"
+                    android:text="小安"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/ananchenlike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:paddingEnd="20dp"
+                    android:text=" 10K"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/benshee"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/bg_blogger"
+                    android:drawableLeft="@drawable/blog_benshee"
+                    android:text="蘇花猴"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/bensheelike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:paddingEnd="20dp"
+                    android:text=" 10K"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/stellahyc"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/bg_blogger"
+                    android:drawableLeft="@drawable/blog_stellahyc"
+                    android:text="史黛拉"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/stellahyclike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:paddingEnd="20dp"
+                    android:text=" 120K"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/rockyrocket"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/bg_blogger"
+                    android:drawableLeft="@drawable/blog_rockyrocket"
+                    android:text="娃娃yumi"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/rockyrocketlike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:paddingEnd="20dp"
+                    android:text=" 120K"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/tramy"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/bg_blogger"
+                    android:drawableLeft="@drawable/blog_tramy"
+                    android:text="崔咪"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/tramylike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:paddingEnd="20dp"
+                    android:text=" 320K"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <Button
+                    android:id="@+id/lsberryw"
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:background="@drawable/bg_blogger"
+                    android:drawableLeft="@drawable/blog_lsberryw"
+                    android:text="小草莓小姐"
+                    android:textSize="25dp" />
+
+                <TextView
+                    android:id="@+id/lsberrywlike"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="end|bottom"
+                    android:paddingEnd="20dp"
+                    android:text=" 310K"
+                    android:textAppearance="?android:attr/textAppearanceLarge" />
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/copyright"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="✽部落客照片來自部落格/粉絲專頁✽"
+        android:textSize="20sp"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tableRow" />
+
+    <TableRow
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_icon"
+        android:layout_alignParentBottom="true"
+        android:orientation="vertical"
+        android:id="@+id/tableRow">
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/icsearch"
+            android:layout_column="0"
+            android:background="#00000000"
+            android:src="@drawable/icon_search" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/icimage"
+            android:layout_column="1"
+            android:background="#00000000"
+            android:src="@drawable/icon_image"
+            android:scaleType="fitCenter" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/ichome"
+            android:layout_column="2"
+            android:background="#00000000"
+            android:src="@drawable/icon_home" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/iclike"
+            android:layout_column="3"
+            android:background="#00000000"
+            android:src="@drawable/icon_like" />
+
+        <ImageButton
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/icsetting"
+            android:layout_column="4"
+            android:background="#00000000"
+            android:src="@drawable/icon_setting" />
+    </TableRow>
+
+
+</RelativeLayout>

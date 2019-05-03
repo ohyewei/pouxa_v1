@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:descendantFocusability="blocksDescendants">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="5dp"
+        android:paddingLeft="0dp">
+
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:id="@+id/img_pdt_pic"
+            android:scaleType="fitCenter"
+            android:background="#00000000"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:maxHeight="120dp"
+            android:maxWidth="120dp"
+            android:minHeight="150dp"
+            android:minWidth="150dp" />
+
+        <TextView
+            android:id="@+id/txt_pdt_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:text="儲存的商品名稱反正他一定會很長的哈哈哈"
+            android:singleLine="true"
+            android:ellipsize="marquee"
+            android:gravity="center_vertical"
+            android:layout_alignParentStart="false"
+            android:layout_toStartOf="@+id/btn_delete"
+            android:layout_toEndOf="@+id/img_pdt_pic"
+            android:layout_centerVertical="true"
+            android:paddingTop="8dp"
+            android:focusable="true"
+            android:marqueeRepeatLimit="marquee_forever"/>
+
+        <ImageButton
+            android:id="@+id/btn_delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/btn_delete_1"
+            android:background="#00000000"
+            android:scaleType="fitCenter"
+            android:layout_alignBottom="@+id/txt_pdt_name"
+            android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true" />
+    </RelativeLayout>
+
+
+</LinearLayout>

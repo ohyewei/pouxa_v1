@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    android:key="activity_setting">
+    <PreferenceCategory
+        android:title="天氣推播通知"
+        android:layout="@layout/preference_category_layout"
+        >
+        <SwitchPreference
+            android:key="notify_switch"
+            android:title="天氣推播"
+            android:layout="@layout/preference_notification_layout"/>
+        <ListPreference
+            android:key="notify_time"
+            android:title="選擇提醒時間"
+            android:entries="@array/notify_time_array"
+            android:entryValues="@array/notify_time_value_array"
+            android:layout="@layout/preference_notification_layout"            />
+        <ListPreference
+            android:key="city"
+            android:title="選擇地區"
+            android:entries="@array/city_array"
+            android:entryValues="@array/city_value_array"
+            android:layout="@layout/preference_notification_layout"/>
+    </PreferenceCategory>
+    <PreferenceCategory
+        android:title="其他項目"
+        android:layout="@layout/preference_category_layout">
+        <Preference
+            android:key="like"
+            android:title="我的收藏"
+            android:layout="@layout/preference_other_layout" />
+        <Preference
+            android:key="tutorial"
+            android:title="使用教學"
+            android:layout="@layout/preference_other_layout" />
+        <Preference
+            android:key="problem"
+            android:title="回報問題"
+            android:layout="@layout/preference_other_layout"/>
+        <Preference
+            android:key="about"
+            android:title="關於我們"
+            android:layout="@layout/preference_other_layout"/>
+    </PreferenceCategory>
+
+</PreferenceScreen>
