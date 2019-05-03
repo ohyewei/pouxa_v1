@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="pouxateam.pouxa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="com.android.alarm.permission.SET_ALARM" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Welcome">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".Weather" />
+        <activity android:name=".WeatherResult" />
+        <activity android:name=".Blogger" />
+        <activity android:name=".Article" />
+        <activity android:name=".Store" />
+        <activity android:name=".Event" />
+        <activity android:name=".SearchResult" />
+        <activity android:name=".Product" />
+        <activity android:name=".Search" />
+        <activity android:name=".Like" />
+        <activity android:name=".Setting" />
+
+        <receiver
+            android:name=".Notification_reciever"
+            android:enabled="true"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="pouxateam.pouxa" />
+                <action android:name="android.intent.action.BOOT_COMPLETED" />
+                <action android:name="android.intent.action.USER_PRESENT" />
+            </intent-filter>
+        </receiver>
+        <activity android:name=".About"></activity>
+    </application>
+
+</manifest>
